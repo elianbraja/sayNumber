@@ -1,0 +1,31 @@
+body {
+  background: linear-gradient(45deg, #FC466B, #3F5EFB);
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  background: #bdb5ff;
+  padding: 3em;
+  height: 320px;
+  border-radius: 20px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  text-align: center;
+}
+
+input {
+  background: white;
+  width: 200px;
+  padding: 1em;
+  margin-bottom: 2em;
+  border: none;
+  border-radius: 5000px;
+  color: #434141;
+  font-weight: 500;
+  font-size: 1rem;
+
+  &[type="submit"] {
+    width: 100px;
+  }
+}

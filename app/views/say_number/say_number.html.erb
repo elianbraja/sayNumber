@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SayNumber</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="wrapper">
+    <p>Say Number</p>
+    <%= form_with url: "/", method: :get do |form| %>
+      <%= form.text_field :number, value: @number%>
+      <%= form.submit "Convert", name: nil%>
+    <% end %>
+    <p><%= @sentence %></p>
+  </div>
+  </body>
+</html>
